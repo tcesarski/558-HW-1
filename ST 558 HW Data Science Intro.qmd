@@ -1,0 +1,50 @@
+---
+title: "Data Science Introduction"
+author: "Taylor Cesarski"
+format: html
+editor: visual
+---
+
+## Text Questions
+
+**1. What do you think being a data scientist is about?**
+
+I think this question will depend on who you ask. As mentioned in the reading, there are different skill tracks of data scientists- engineering, analysis, and modeling/inference that have different specialties. I think all data scientists work with large & unclean datasets and spend time wrangling data to get it in a usable form. They also often work at companies and have to be able to have knowledge about the company/business and communicate their findings to those that may not have as much experience in data analysis and statistics. They often work on teams (either standalone, embedded, or integrated) to analyze data within a company. Data scientists solve specific questions using accurate and relevant data.
+
+**2. What differences/similarities do you seen between data scientists and statisticians?**
+
+Similarities
+
+-   Both deal with data!
+-   Both deal with modeling data!
+-   Both perform analysis on the data!
+-   Both interpret data!
+-   Both require mathematical and statistical knowledge!
+
+Differences
+
+-   Statisticians deal with small, structured datasets whereas data scientists deal with large, messy datasets.
+-   Data scientists spend a lot of time cleaning the data.
+-   Statisticians typically use models and "bring data to model" whereas data scientists "bring models to data"
+
+**3. How do you view yourself in relation to these two areas?**
+
+Personally, I am much more interested in the "statistician" side of things than the data scientist realm. Programming is not my specialty and dealing with large & messy datasets sounds like a headache. I prefer to spend more time on statistical analysis than wrangling the data. However, I recognize that cleaning data and using programming to do so is an extremely useful & marketable skill and so I'm excited to learn more about this.
+
+## Code Section
+
+We are determining the class, type, and structure of the object y which is applying the density function to the Sepal.Length column of the iris data frame.
+
+```{r}
+y <- density(iris$Sepal.Length)
+class(y)
+typeof(y)
+str(y)
+```
+
+Then, we are plotting the function y. We are hiding this code in the final document by using echo:false in special comments.
+
+```{r}
+#| echo: false
+plot(y)
+```
